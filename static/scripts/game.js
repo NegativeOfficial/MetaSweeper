@@ -7,7 +7,7 @@ export function generateBombs(n = 0, layer = [[]]){
 
     for (let i = 0; i < n; i++){
         let x = values.splice(Math.random()*values.length,1)[0]
-        layer[(x - x % layer.length) / layer.length][x % layer[0].length] = 'B'
+        layer[(x - x % layer.length) / layer.length][x % layer.length] = 'B'
     }
     return res
 }
